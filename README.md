@@ -6,6 +6,38 @@ This repository contains the `twitter-GTM-find/` AI Skill.
 
 This pipeline automates the discovery of highly-targeted, Developer-First startups hiring for Go-To-Market (GTM), Developer Relations (DevRel), and Growth roles by scraping Twitter (via Apify) and automatically verifying the startups' funding and product type using Gemini's native Google Search Grounding.
 
+## Installation
+
+### Prerequisites
+
+You need [Node.js](https://nodejs.org/) installed. It comes with `npx` built in.
+
+### Option 1: npx (All Agents)
+
+```bash
+npx "@opendirectory.dev/skills" install twitter-GTM-find-skill --target claude
+```
+
+Supported `--target` values: `claude`, `gemini`, `codex`, `opencode`, `anti-gravity`, `openclaw`, `hermes`
+
+### Option 2: Native Plugin (Claude Code Only)
+
+Run these two commands inside your Claude Code terminal:
+
+```bash
+/plugin marketplace add Varnan-Tech/opendirectory
+/plugin install twitter-GTM-find-skill@opendirectory-marketplace
+```
+
+### Option 3: Claude Desktop App
+
+**Step 1: Download**
+Click **Code → Download ZIP** on this repo's GitHub page.
+
+**Step 2: Install**
+1. Open Claude Desktop > Customize > Skills > **+** > Upload a skill
+2. Drop the downloaded zip or extracted folder
+
 ## The Skill Directory
 
 All executable code and documentation are packaged cleanly inside the `twitter-GTM-find/` folder. This is designed to be directly imported and read by AI agents (like OpenClaw or Claude) so they understand how to use the tool.
